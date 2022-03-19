@@ -1,0 +1,58 @@
+
+
+
+#TodoItem{
+    display: flex;
+    width: calc(50%-8px);
+    padding: 8px;
+    background-color: white;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    &:hover{
+        background-color: #f9f9f9;
+    }
+    &:first-child{
+        border-top: 1px solid #ddd;
+    }
+    &.editing{
+        background-color: #fff3d2;
+    }
+    &.completed{
+        background-color: #f9f9f9;
+        >.text{
+            text-decoration: line-through;
+            color:gray;
+        }
+    }
+    >.checkbox{
+        font-size: 16px;
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+    >.editing{
+       flex: 1; 
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       >.input{
+        border: 0;
+        background-color: #fff3d2;
+        padding: 0;
+        flex: 1;
+        outline: none;
+       }
+       >.iconWrapper{
+        font-size: 16px;
+          >.icon{
+            float:right;
+            margin-left: 4px;
+            color:#a9a9a9;
+            cursor:pointer;
+          }
+       }
+    }
+    >.text{
+        font-size: 16px;
+        flex: 1;
+    }
+}

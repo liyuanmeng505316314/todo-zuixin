@@ -1,0 +1,19 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#statistics{
+
+    font-family:sans-serif;
+    >ul{
+        display: flex;
+        >li{
+            flex: 1;
+            list-style: none;
+           
+        }
+    }
+}
+

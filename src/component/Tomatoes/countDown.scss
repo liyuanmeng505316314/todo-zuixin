@@ -1,0 +1,25 @@
+
+
+#countDown{
+    position:relative;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px;
+    overflow: hidden;
+    >.restTime{
+        position: relative;
+        z-index: 10;
+    }
+    >.progress{
+      position: absolute ;
+      margin-left:-1px;
+      border-radius: 4px;
+      top:0;
+      bottom:0;
+      left:0;
+      background-color:#a9a9a9;
+      box-shadow: 0 2px 0 rgba(225,225,225,.5);
+      z-index: 0;
+    }
+}

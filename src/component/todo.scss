@@ -1,0 +1,28 @@
+
+
+
+#Todos{
+    width: 47vw;
+    height: 400px;
+    background-color: #fdfdfd;
+    margin-left: 1vw;
+    display: flex;
+    flex-wrap:wrap;
+    >.include{
+        width: 47vw;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        .todoList{
+            padding: 8px;
+            margin-top: 16px;
+           }
+       .todo2{
+          >.input{
+            padding: 8px;
+            width: 32vw;
+            margin: auto;
+           }
+        }
+      
+    } 
+}
